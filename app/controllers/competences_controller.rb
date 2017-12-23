@@ -18,17 +18,25 @@ class CompetencesController < ApplicationController
 
   def create
     @competence = Competence.create(competence_params)
-    redirect_to competence_path(@competence), notice: 'Создали компетенцию'
+    if @competence.save
+       redirect_to competence_path(@competence), notice: 'Создали компетенцию'
+    else
+       flash[:alert] = "Ошибка при создании компетенции"
+       render 'new'
+    end
+
   end
 
   def edit
   end
 
+  # TODO: обработка ошибок
   def update
     @competence.update(competence_params)
     redirect_to competence_path(@competence), notice: 'Изменили компетенцию'
   end
 
+  # TODO: обработка ошибок
   def destroy
     @competence.destroy
     redirect_to competences_path, notice: 'Изменили компетенцию'

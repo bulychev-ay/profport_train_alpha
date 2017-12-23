@@ -5,6 +5,7 @@
       %td Название
       %td Действия
   %tbody
+    = link_to 'Создать', new_competence_path, class: 'btn btn-info'
     - @competences.each do |competence|
       %tr
         %td= competence.id

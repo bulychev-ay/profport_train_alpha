@@ -1,8 +1,11 @@
 = form_with(model: @competence, local: true) do |form|
-  = form.label :title
+  - if @competence.errors.any?
+    - @competence.errors.full_messages.each do |message|
+      .alert.alert-danger= message
+  = form.label :title, "Заголовок"
   = form.text_field :title
   %br
-  = form.label :description
+  = form.label :description, "Описание"
   = form.text_area :description
   %br
   = form.submit
