@@ -2,10 +2,11 @@
   - if @competence.errors.any?
     - @competence.errors.full_messages.each do |message|
       .alert.alert-danger= message
-  = form.label :title, "Заголовок"
-  = form.text_field :title
+  .form-group
+    = form.label :title, "Заголовок"
+    = form.text_field :title, class: 'form-control'
+  .form-group
+    = form.label :description, "Описание"
+    = form.text_area :description, class: 'form-control'
   %br
-  = form.label :description, "Описание"
-  = form.text_area :description
-  %br
-  = form.submit
+  = form.submit nil, class: 'btn btn-success'

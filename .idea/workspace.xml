@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f288bc1-0735-47b3-91ed-b714f0168f55" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/competences_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/competences_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/competence.rb" afterPath="$PROJECT_DIR$/app/models/competence.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/competences/_form.html.haml" afterPath="$PROJECT_DIR$/app/views/competences/_form.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/competences/index.html.haml" afterPath="$PROJECT_DIR$/app/views/competences/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_flashes.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/_flashes.html.haml" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -67,8 +62,8 @@
       <file leaf-file-name="_form.html.haml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/competences/_form.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+            <state relative-caret-position="162">
+              <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -104,8 +99,8 @@
         <option value="$PROJECT_DIR$/app/views/layouts/_flashes.html.haml" />
         <option value="$PROJECT_DIR$/app/views/competences/index.html.haml" />
         <option value="$PROJECT_DIR$/app/models/competence.rb" />
-        <option value="$PROJECT_DIR$/app/views/competences/_form.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/competences_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/competences/_form.html.haml" />
       </list>
     </option>
   </component>
@@ -325,12 +320,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514020244239</updated>
-      <workItem from="1514020248481" duration="8811000" />
+      <workItem from="1514020248481" duration="9033000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8811000" />
+    <option name="totallyTimeSpent" value="9033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
@@ -472,8 +467,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/competences/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        <state relative-caret-position="162">
+          <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
           <folding />
         </state>
       </provider>
