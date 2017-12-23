@@ -1,0 +1,10 @@
+%table
+  %thead
+    %tr
+      %td №
+      %td Название
+  %tbody
+    - @competences.each do |competence|
+      %tr
+        %td= competence.id
+        %td= competence.title
