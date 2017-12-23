@@ -26,6 +26,11 @@ class CompetencesController < ApplicationController
     render plain: 'Ok'
   end
 
+  def destroy
+    Competence.find(params[:id]).destroy
+    render plain: 'удалили :С'
+  end
+
   private
 
   def competence_params
