@@ -1,11 +1,15 @@
 class CompetencesController < ApplicationController
+  before_action :find_competence, only: %i[show edit update destroy]
+
+  def find_competence
+    @competence = Competence.find(params[:id])
+  end
+
   def index
     @competences = Competence.all.sort
   end
 
-  def show
-    @competence = Competence.find(params[:id])
-  end
+  def show; end
 
   def new
     @competence = Competence.new
@@ -13,22 +17,19 @@ class CompetencesController < ApplicationController
 
   def create
     @competence = Competence.create(competence_params)
-    render plain: 'Ok'
+    redirect_to competence_path(@competence), notice: 'Создали компетенцию'
   end
 
-  def edit
-    @competence = Competence.find(params[:id])
-  end
+  def edit; end
 
   def update
-    @competence = Competence.find(params[:id])
     @competence.update(competence_params)
-    render plain: 'Ok'
+    redirect_to competence_path(@competence), notice: 'Изменили компетенцию'
   end
 
   def destroy
-    Competence.find(params[:id]).destroy
-    render plain: 'удалили :С'
+    @competence.destroy
+    redirect_to competences_path, notice: 'Изменили компетенцию'
   end
 
   private
