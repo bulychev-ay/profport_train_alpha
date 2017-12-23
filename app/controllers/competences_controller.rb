@@ -9,7 +9,8 @@ class CompetencesController < ApplicationController
     @competences = Competence.all.sort
   end
 
-  def show; end
+  def show
+  end
 
   def new
     @competence = Competence.new
@@ -20,7 +21,8 @@ class CompetencesController < ApplicationController
     redirect_to competence_path(@competence), notice: 'Создали компетенцию'
   end
 
-  def edit; end
+  def edit
+  end
 
   def update
     @competence.update(competence_params)

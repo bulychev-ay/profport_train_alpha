@@ -1,4 +1,4 @@
-%table
+%table.table.table-hover.table-striped
   %thead
     %tr
       %td №
@@ -10,5 +10,5 @@
         %td= competence.id
         %td= link_to competence.title, competence_path(competence)
         %td
-          = link_to 'Редактировать', edit_competence_path(competence)
-          = link_to 'Удалить', competence_path(competence), method: :delete
+          = link_to '', edit_competence_path(competence), class: 'glyphicon glyphicon-edit'
+          = link_to '', competence_path(competence), method: :delete, class: 'glyphicon glyphicon-trash', data: { confirm: 'Вы уверены?' }
