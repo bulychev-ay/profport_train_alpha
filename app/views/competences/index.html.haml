@@ -7,4 +7,4 @@
     - @competences.each do |competence|
       %tr
         %td= competence.id
-        %td= competence.title
+        %td= link_to competence.title, competence_path(competence)
