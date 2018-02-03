@@ -49,6 +49,8 @@ gem 'simple_form'
 
 gem 'pg'
 
+gem 'roo'
+
 gem 'webpacker', '~> 3.0'
 
 group :development, :test do
