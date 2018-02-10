@@ -7,7 +7,6 @@ class CompetencesController < ApplicationController
 
   def index
     @competences = Competence.all.sort
-     render json: @competences
   end
 
   def show

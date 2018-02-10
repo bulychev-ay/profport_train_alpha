@@ -1,2 +1,3 @@
 = @terms.each do |term|
   = term.competence.title
+  = link_to "Izychit", learn_competence_term_path(term.competence, term), method: :patch

@@ -1,5 +1,10 @@
 class TermsController < ApplicationController
-  def create; end
+  def create
+     @term = Term.new(term_params)
+     @term.competence_id = params[:competence_id]
+     @term.save
+     redirect_to competences_path
+  end
 
   def index
     @terms = Term.all
@@ -11,7 +16,14 @@ class TermsController < ApplicationController
     end
   end
 
-  def new; end
+  def new
+     @competence = Competence.find(params[:competence_id])
+     @term = Term.new
+  end
+
+  def learn
+    render plain: "Mi izychili #{Term.find(params[:id])}"
+  end
 
   private
 
@@ -22,4 +34,8 @@ class TermsController < ApplicationController
      pdf.render_file filename
      filename
   end
+
+   def term_params
+     params.require(:term).permit(:id, :title)
+   end
 end
