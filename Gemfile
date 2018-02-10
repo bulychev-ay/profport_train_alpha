@@ -39,6 +39,8 @@ gem 'haml'
 
 gem 'jquery-rails'
 
+gem 'builder'
+
 gem 'haml-rails'
 
 gem 'awesome_print'
@@ -50,6 +52,8 @@ gem 'simple_form'
 gem 'pg'
 
 gem 'roo'
+
+gem 'prawn'
 
 gem 'webpacker', '~> 3.0'
 
