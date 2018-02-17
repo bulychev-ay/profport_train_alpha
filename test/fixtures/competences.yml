@@ -1,9 +1,5 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  title: MyString
-  description: MyText
-
-two:
-  title: MyString
-  description: MyText
+<% 100.times do |n| %>
+compy_<%= n %>:
+  title: "Otkritie atmosferi na Venere <%= n %>"
+<% end %>

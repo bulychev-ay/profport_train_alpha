@@ -1,8 +1,8 @@
 require 'test_helper'
 
 class CompetencesControllerTest < ActionDispatch::IntegrationTest
-  test "should get index" do
-    get competences_index_url
+  test "Vivod vseh competences path" do
+    get competences_path
     assert_response :success
   end
 
