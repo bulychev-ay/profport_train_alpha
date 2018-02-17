@@ -7,7 +7,7 @@ class TermsController < ApplicationController
   end
 
   def index
-    @terms = Term.all
+    @terms = Term.where(competence_id: params[:competence_id])
     respond_to do |format|
       format.html
       format.json

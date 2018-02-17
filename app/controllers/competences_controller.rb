@@ -14,6 +14,7 @@ class CompetencesController < ApplicationController
 
   def new
     @competence = Competence.new
+     2.times { @competence.terms.build }
   end
 
   def create
@@ -45,6 +46,6 @@ class CompetencesController < ApplicationController
   private
 
   def competence_params
-    params.require(:competence).permit(:title, :description)
+    params.require(:competence).permit(:title, :description, terms_attributes: [:title, :id])
   end
 end

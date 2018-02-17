@@ -8,5 +8,7 @@
   .form-group
     = form.label :description, "Описание"
     = form.text_area :description, class: 'form-control'
+    = form.fields_for :terms do |term_form|
+      = term_form.text_field :title, placeholder: 'title'
   %br
   = form.submit nil, class: 'btn btn-success'
