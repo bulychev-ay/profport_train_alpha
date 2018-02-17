@@ -43,13 +43,13 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-  gem 'capybara-webkit'
+  # gem 'capybara-webkit'
   gem 'rspec-rails'
   gem 'factory_bot_rails'
   gem 'ffaker'
 end
 
-group :test
+group :test do
   gem 'database_cleaner'
   gem 'launchy'
   gem 'shoulda-matchers', '~> 3.1'
