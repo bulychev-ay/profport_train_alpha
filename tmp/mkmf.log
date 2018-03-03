@@ -1,0 +1,4 @@
+--without-sqlite3-dir
+--without-sqlite3-include=${sqlite3-dir}/include
+--without-sqlite3-lib=${sqlite3-dir}/lib
+--without-sqlite3-config
