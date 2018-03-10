@@ -36,7 +36,16 @@ gem 'roo'
 
 gem 'prawn'
 
-# gem 'webpacker', '~> 3.0'
+gem 'webpacker', '~> 3.0'
+
+gem 'bcrypt', '~> 3.1.7'
+
+gem 'devise'
+
+gem 'devise-bootstrap-views'
+
+# Можно реализовать авторизацию с ролями
+gem 'pundit'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

@@ -25,5 +25,6 @@ module ProfportTrainAplpha
       generator.test_framework :rspec, spec: true
     end
 
+     config.i18n.default_locale = :ru
   end
 end

@@ -13,6 +13,7 @@ class CompetencesController < ApplicationController
   end
 
   def new
+    authorize Competence
     @competence = Competence.new
      2.times { @competence.terms.build }
   end

@@ -9,6 +9,10 @@
   </head>
 
   <body>
+    <div id="slider">
+      <%= button_tag '>>', id: 'move-right' %>
+      <%= image_tag asset_path('slides/1.jpg') %>
+    </div>
     <%= render 'layouts/flashes' %>
     <%= yield %>
   </body>
